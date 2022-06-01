@@ -1,7 +1,6 @@
 export default class FuglyRenderer {
-  constructor(view, ...args) {
+  constructor(view) {
     this.view = view
-    this.args = args
     this.setup()
   }
 
@@ -16,6 +15,10 @@ export default class FuglyRenderer {
   }
 
   render() {
-    this.view.render(...this.args)
+    this.view.render()
+  }
+
+  static withView(view) {
+    return new FuglyRenderer(view)
   }
 }

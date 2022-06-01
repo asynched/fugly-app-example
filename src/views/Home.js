@@ -19,8 +19,4 @@ export default class HomeView extends View {
       },
     })
   }
-
-  static fromDefaults() {
-    return new HomeView()
-  }
 }
