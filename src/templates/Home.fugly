@@ -1,0 +1,11 @@
+<main class="grid w-full h-screen place-items-center">
+  <div class="text-center mx-auto max-w-[384px] w-[90%]">
+    <h1 class="mb-8 text-4xl font-bold tracking-tighter">Hello, <$= view.name $>!</h1>
+    <p>This is a Fugly app. 🤠</p>
+    <h2 class="mb-8">Counter is currently at: <$= view.counter $></h2>
+    <div class="flex flex-col gap-4 grid-cols-2">
+      <button class="py-2 rounded text-blue-600 border-2 border-blue-600 transition ease-in-out hover:bg-blue-600 hover:text-white" onclick="dispatch('increment')">+</button>
+      <button class="py-2 rounded text-red-600 border-2 border-red-600 transition ease-in-out hover:bg-red-600 hover:text-white" onclick="dispatch('decrement')">-</button>
+    </div>
+  </div>
+</main>

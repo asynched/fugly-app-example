@@ -1,0 +1,3 @@
+[submodule "webpack-fugly-loader"]
+	path = webpack-fugly-loader
+	url = git@github.com:asynched/webpack-fugly-loader.git
